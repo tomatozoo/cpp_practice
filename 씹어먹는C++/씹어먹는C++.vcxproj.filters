@@ -13,5 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\class1">
+      <UniqueIdentifier>{5fa39d92-38bc-440d-90c0-b94f8a70c56d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\class2">
+      <UniqueIdentifier>{a2aa75b5-8b01-472f-bc62-b93498f23ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\class3">
+      <UniqueIdentifier>{b520e730-586f-4786-9f95-a82afdc29e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\class4">
+      <UniqueIdentifier>{ab001d93-19a5-455c-a133-b0d91385370e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\class5">
+      <UniqueIdentifier>{fba8a618-835f-4632-a27f-79c2309b615c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="firstfile.cpp">
+      <Filter>소스 파일\class1</Filter>
+    </ClCompile>
+    <ClCompile Include="secondcpp.cpp">
+      <Filter>소스 파일\class2</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdcpp.cpp">
+      <Filter>소스 파일\class3</Filter>
+    </ClCompile>
+    <ClCompile Include="fourthcpp.cpp">
+      <Filter>소스 파일\class4</Filter>
+    </ClCompile>
+    <ClCompile Include="fourth_two.cpp">
+      <Filter>소스 파일\class4</Filter>
+    </ClCompile>
+    <ClCompile Include="fifth.cpp">
+      <Filter>소스 파일\class5</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
