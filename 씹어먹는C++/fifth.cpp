@@ -28,50 +28,55 @@ private:
 	int month_;
 	int date_;
 public:
-	void SetDate(int year, int month, int date) {
+	void SetDate(int year, int month, int date);
+	void AddDay(int inc);
+	void AddMonth(int inc);
+	void ShowDate();
+	Date() {
+		year_ = 2022;
+		month_ = 6;
+		date_ = 16;
+	}
+	Date(int year, int month, int day) {
 		year_ = year;
 		month_ = month;
-		date_ = date;
-	}
-	void AddDay(int inc) {
-		int date_info[13] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
-		date_ += inc;
-		while (true)
-		{
-			if (date_ <= date_info[month_]) {
-				break;
-			}
-			else {
-				date_ -= date_info[month_];
-				AddMonth(1);
-			}
-		}
-	}
-	void AddMonth(int inc) {
-		month_ += inc;
-		if (month_ > 12) {
-			year_ += (month_ / 12);
-			month_ -= month_ % 12;
-		}
-	}
-	void ShowDate() {
-		std::cout<<year_<<"/"<<month_<<"/"<<date_<< std::endl;
+		date_ = day;
 	}
 };
-
-int main() {
-	Animal animal;
-	animal.set_animal(100, 50);
-	animal.increase_food(30);
-	animal.view_stat();
-
-	Date date;
-	date.SetDate(2022, 6, 16);
+void Date::SetDate(int year, int month, int date) {
+	year_ = year;
+	month_ = month;
+	date_ = date;
+}
+void Date::AddDay(int inc) {
+	int date_info[13] = { 0,31,28,31,30,31,30,31,31,30,31,30,31 };
+	date_ += inc;
+	while (true)
+	{
+		if (date_ <= date_info[month_]) {
+			break;
+		}
+		else {
+			date_ -= date_info[month_];
+			AddMonth(1);
+		}
+	}
+}
+void Date::AddMonth(int inc) {
+	month_ += inc;
+	if (month_ > 12) {
+		year_ += (month_ / 12);
+		month_ -= month_ % 12;
+	}
+}
+void Date::ShowDate() {
+	std::cout << year_ << "/" << month_ << "/" << date_ << std::endl;
+}
+int fifthmain() {
+	Date date(2011,3,1);
 	date.ShowDate();
-	date.AddMonth(10);
-	date.ShowDate();
-	date.AddDay(100);
-	date.ShowDate();
+	Date newdate = Date();
+	newdate.ShowDate();
 
 
 	return 0;

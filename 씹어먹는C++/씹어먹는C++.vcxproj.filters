@@ -56,5 +56,17 @@
     <ClCompile Include="fifth.cpp">
       <Filter>소스 파일\class5</Filter>
     </ClCompile>
+    <ClCompile Include="2_5.cpp">
+      <Filter>소스 파일\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="date.cpp">
+      <Filter>소스 파일\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="math.cpp">
+      <Filter>소스 파일\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="copy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

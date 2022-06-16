@@ -139,10 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2_5.cpp" />
+    <ClCompile Include="copy.cpp" />
+    <ClCompile Include="date.cpp" />
     <ClCompile Include="fifth.cpp" />
     <ClCompile Include="firstfile.cpp" />
     <ClCompile Include="fourthcpp.cpp" />
     <ClCompile Include="fourth_two.cpp" />
+    <ClCompile Include="math.cpp" />
     <ClCompile Include="secondcpp.cpp" />
     <ClCompile Include="thirdcpp.cpp" />
   </ItemGroup>
