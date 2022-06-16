@@ -33,7 +33,7 @@ void one_day_pass(Animal* animal) {
 	animal->food -= 30;
 	animal->clean -= 20;
 }
-int main() {
+int forth_two() {
 	Animal* list[10];
 	int animal_num = 0;
 	for (;;)
