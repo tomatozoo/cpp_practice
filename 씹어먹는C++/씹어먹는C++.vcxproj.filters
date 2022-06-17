@@ -66,7 +66,13 @@
       <Filter>소스 파일\class5</Filter>
     </ClCompile>
     <ClCompile Include="copy.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="copyconstructor.cpp">
+      <Filter>소스 파일\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="practice_constructor.cpp">
+      <Filter>소스 파일\class5</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
