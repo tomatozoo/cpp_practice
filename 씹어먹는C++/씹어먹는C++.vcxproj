@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2_5.cpp" />
+    <ClCompile Include="const.cpp" />
     <ClCompile Include="copy.cpp" />
     <ClCompile Include="copyconstructor.cpp" />
     <ClCompile Include="date.cpp" />

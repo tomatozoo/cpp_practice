@@ -89,7 +89,7 @@ void string::print_string() {
 }
 
 
-int main() {
+int maaaain() {
 	string strr("abcde");
 	strr.print_string();
 	strr.strlen();
