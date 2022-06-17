@@ -3,7 +3,7 @@
 //복사 생성자
 //디폴트 복사 생성자의 한계
 #include <iostream>
-
+//
 class Marine {
 	int hp;
 	int coord_x, coord_y;
