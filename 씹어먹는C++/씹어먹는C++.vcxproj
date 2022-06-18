@@ -150,6 +150,7 @@
     <ClCompile Include="fourth_two.cpp" />
     <ClCompile Include="math.cpp" />
     <ClCompile Include="practice_constructor.cpp" />
+    <ClCompile Include="referencereturn.cpp" />
     <ClCompile Include="secondcpp.cpp" />
     <ClCompile Include="thirdcpp.cpp" />
   </ItemGroup>
