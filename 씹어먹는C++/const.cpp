@@ -1,4 +1,5 @@
 //const, const, const!
+
 #include <iostream>
 class NewMarine {
 	int hp;
