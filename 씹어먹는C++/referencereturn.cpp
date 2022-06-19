@@ -10,7 +10,7 @@ public:
 	int get_x() { return x; }
 	void show_x() { std::cout << x << std::endl; }
 };
-int main() {
+int m1a2i3n() {
 	A a(5);
 	a.show_x();
 
