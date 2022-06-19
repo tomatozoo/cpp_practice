@@ -153,6 +153,7 @@
     <ClCompile Include="practice_constructor.cpp" />
     <ClCompile Include="referencereturn.cpp" />
     <ClCompile Include="secondcpp.cpp" />
+    <ClCompile Include="stringclass.cpp" />
     <ClCompile Include="thirdcpp.cpp" />
   </ItemGroup>
   <ItemGroup>
