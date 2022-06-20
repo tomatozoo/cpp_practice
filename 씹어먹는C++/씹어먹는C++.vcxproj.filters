@@ -28,6 +28,9 @@
     <Filter Include="소스 파일\class5">
       <UniqueIdentifier>{fba8a618-835f-4632-a27f-79c2309b615c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\class6">
+      <UniqueIdentifier>{bfac564f-d6a1-45b7-904d-f5150b638429}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">
@@ -90,7 +93,13 @@
       <Filter>소스 파일\class5</Filter>
     </ClCompile>
     <ClCompile Include="explicit.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="mutable.cpp">
+      <Filter>소스 파일\class5</Filter>
+    </ClCompile>
+    <ClCompile Include="overloading.cpp">
+      <Filter>소스 파일\class6</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

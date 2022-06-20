@@ -151,6 +151,8 @@
     <ClCompile Include="fourthcpp.cpp" />
     <ClCompile Include="fourth_two.cpp" />
     <ClCompile Include="math.cpp" />
+    <ClCompile Include="mutable.cpp" />
+    <ClCompile Include="overloading.cpp" />
     <ClCompile Include="practice_constructor.cpp" />
     <ClCompile Include="referencereturn.cpp" />
     <ClCompile Include="secondcpp.cpp" />
