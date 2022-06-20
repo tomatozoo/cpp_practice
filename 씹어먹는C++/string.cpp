@@ -223,7 +223,7 @@ int MyString::compare(const MyString& str) const {
 	return -1;
 }
 
-int main() {
+int ma11111in() {
 	MyString str1("abcdef");
 	MyString str2("12345");
 	std::cout<< "str1 and str2 compare : " << str1.compare(str2) << std::endl;
