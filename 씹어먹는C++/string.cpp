@@ -140,27 +140,92 @@ MyString& MyString::insert(int loc, const MyString& str){
 			string_content[i] = prev_string_content[i];
 		}
 		// 새롭게 insert 되는 문자열을 삽입한다. 
+		for (int j = 0; j < str.string_length; j++) {
+			string_content[i + j] = str.string_content[j];
+		}
+		// 문자열 나머지 부분을 복사
+		for (; i < string_length; i++)
+		{
+			string_content[str.string_length + i] = prev_string_content[i];
+		}
+		delete[] prev_string_content;
+		string_length = string_length + str.string_length;
+		return *this;
 	}
 	// 안해도 되는 경우
+	for (int i = string_length-1; i >= loc;i--)
+	{
+		// 뒤로 밀기
+		string_content[i + str.string_length] = string_content[i];
+	}
+	// insert되는 문자 집어넣기
+	for (int i = 0; i < str.string_length; i++)
+	{
+		string_content[i + loc] = str.string_content[i];
+	}
+	string_length = string_length + str.string_length;
 	return *this;
 
 }
-MyString& MyString::insert(int loc, const char* str) {}
-MyString& MyString::insert(int loc, char c) {}
+MyString& MyString::insert(int loc, const char* str) {
+	MyString temp(str);
+	return insert(loc, temp);
+}
+MyString& MyString::insert(int loc, char c) {
+	MyString temp(c);
+	return insert(loc, temp);
+}
 
-MyString& MyString::erase(int loc, int num) {}
+MyString& MyString::erase(int loc, int num) {
+	// num 문자를 지운다. 
+	if (num < 0 || loc<0 || loc>string_length) return *this;
+	// 앞 문자를 끌고온다
+	for (int i = loc+num; i < string_length; i++)
+	{
+		string_content[i - num] = string_content[i];
+	}
+	string_length -= num;
+	return *this;
+}
 
-int MyString::find(int find_from, const MyString& str) const {}
-int MyString::find(int find_from, const char* str) const {}
-int MyString::find(int find_from, char c) const {}
+int MyString::find(int find_from, const MyString& str) const {
+	int i, j;
+	if (str.string_length == 0) return -1;
+	for (i = find_from; i <= string_length - str.string_length; i++) {
+		for (j = 0; j < str.string_length; j++) {
+			if (string_content[i + j] != str.string_content[j]) break;
+		}
+		if (j == str.string_length) return i;
+	}
+	return -1;
+}
+int MyString::find(int find_from, const char* str) const {
+	MyString temp(str);
+	return find(find_from, temp);
+}
+int MyString::find(int find_from, char c) const {
+	MyString temp(c);
+	return find(find_from, temp);
+}
 
-int MyString::compare(const MyString& str) const {}
+int MyString::compare(const MyString& str) const {
+	for (int i = 0; i < std::min(string_length, str.string_length); i++) {
+		if (string_content[i] > str.string_content[i]) {
+			return 1;
+		}
+		else if (string_content[i] < str.string_content[i]) {
+			return -1;
+		}
+	}
+	if (string_length == str.string_length) return 0;
+	else if (string_length > str.string_length)
+		return 1;
+	return -1;
+}
 
 int main() {
-	MyString str1("very very long string");
-	str1.reserve(30);
-	std::cout << "capacity : " << str1.capacity() << std::endl;
-	std::cout << "length : " << str1.length() << std::endl;
-
+	MyString str1("abcdef");
+	MyString str2("12345");
+	std::cout<< "str1 and str2 compare : " << str1.compare(str2) << std::endl;
 	return 0;
 }
