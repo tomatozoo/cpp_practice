@@ -92,7 +92,7 @@ String::~String()
 {
 	delete[] str;
 }
-int main() {
+int m1ain() {
 	String string1('c', 5);
 	const char* c = "abcdefg";
 	String string2(c);
