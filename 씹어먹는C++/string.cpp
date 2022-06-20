@@ -14,16 +14,29 @@ public:
 	MyString(const char* str);
 	MyString(const MyString& str);
 	~MyString();
+
 	int length() const;
 	int capacity() const;
 	void reserve(int size);
+
 	void print();
+
 	MyString& assign(const MyString& str);
 	MyString& assign(const char* str);
+
 	char at(int i) const;
+
 	MyString& insert(int loc, const MyString& str);
 	MyString& insert(int loc, const char* str);
 	MyString& insert(int loc, char c);
+
+	MyString& erase(int loc, int num);
+
+	int find(int find_from, const MyString& str) const;
+	int find(int find_from, const char* str) const;
+	int find(int find_from, char c) const;
+
+	int compare(const MyString& str) const;
 };
 MyString::MyString(char c) {
 	string_content = new char[1];
@@ -107,9 +120,42 @@ char MyString::at(int i) const {
 		return string_content[i];
 	}
 }
-MyString& MyString::insert(int loc, const MyString& str);
-MyString& MyString::insert(int loc, const char* str);
-MyString& MyString::insert(int loc, char c);
+
+MyString& MyString::insert(int loc, const MyString& str){
+	// i 위치 바로 앞에 문자를 삽입하기
+	// 안해도 되는 케이스들
+	if (loc < 0 || loc > string_length) return *this;
+	// 새롭게 동적 할당해야 하는 경우 
+	if (string_length + str.string_length > memory_capacity) {
+		if (memory_capacity * 2 > string_length + str.string_length)
+			memory_capacity *= 2;
+		else
+			memory_capacity = string_length + str.string_length;
+		char* prev_string_content = string_content;
+		string_content = new char[memory_capacity];
+
+		// 일단 insert 되는 부분 직전까지 내용을 복사한다. 
+		int i;
+		for (i = 0; i < loc; i++) {
+			string_content[i] = prev_string_content[i];
+		}
+		// 새롭게 insert 되는 문자열을 삽입한다. 
+	}
+	// 안해도 되는 경우
+	return *this;
+
+}
+MyString& MyString::insert(int loc, const char* str) {}
+MyString& MyString::insert(int loc, char c) {}
+
+MyString& MyString::erase(int loc, int num) {}
+
+int MyString::find(int find_from, const MyString& str) const {}
+int MyString::find(int find_from, const char* str) const {}
+int MyString::find(int find_from, char c) const {}
+
+int MyString::compare(const MyString& str) const {}
+
 int main() {
 	MyString str1("very very long string");
 	str1.reserve(30);
