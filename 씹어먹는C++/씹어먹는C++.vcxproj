@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2_5.cpp" />
+    <ClCompile Include="complexclass.cpp" />
     <ClCompile Include="const.cpp" />
     <ClCompile Include="constfunction.cpp" />
     <ClCompile Include="copy.cpp" />

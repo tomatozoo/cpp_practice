@@ -101,5 +101,8 @@
     <ClCompile Include="overloading.cpp">
       <Filter>소스 파일\class6</Filter>
     </ClCompile>
+    <ClCompile Include="complexclass.cpp">
+      <Filter>소스 파일\class6</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

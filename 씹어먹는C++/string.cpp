@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <string.h>
 
 // string class
@@ -228,4 +228,4 @@ int ma11111in() {
 	MyString str2("12345");
 	std::cout<< "str1 and str2 compare : " << str1.compare(str2) << std::endl;
 	return 0;
-}
+}*/

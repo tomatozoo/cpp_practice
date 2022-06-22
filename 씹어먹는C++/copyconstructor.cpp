@@ -51,7 +51,7 @@ void Photon_Cannon::show_status() {
 	std::cout << "HP : " << hp << std::endl;
 }
 
-int ma1in() {
+int ma1dfsd1in() {
 	Photon_Cannon cannon1(3, 5,"ImCannon");
 	Photon_Cannon cannon2(cannon1);
 	// == Photon_Cannon cannon2 = cannon1;
