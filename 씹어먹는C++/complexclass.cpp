@@ -4,10 +4,12 @@ private:
 	double real, img;
 public:
 	Complex(double real, double img) : real(real), img(img) {}
+	Complex(const Complex& c) { real = c.real, img = c.img; }
 	Complex operator+(const Complex& c);
 	Complex operator-(const Complex& c);
 	Complex operator*(const Complex& c);
 	Complex operator/(const Complex& c);
+	Complex& operator=(const Complex& c);
 	void println() { std::cout << real << "+" << img << "i" << std::endl; }
 };
 
@@ -29,6 +31,11 @@ Complex Complex::operator/(const Complex& c) {
 		(img * c.real-real*c.img)/(c.real*c.real+c.img*c.img)
 	);
 	return temp;
+}
+Complex& Complex::operator=(const Complex& c) {
+	real = c.real;
+	img = c.img;
+	return *this;
 }
 
 int main() {
