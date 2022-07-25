@@ -160,6 +160,7 @@
     <ClCompile Include="string.cpp" />
     <ClCompile Include="stringclass.cpp" />
     <ClCompile Include="thirdcpp.cpp" />
+    <ClCompile Include="wrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h" />

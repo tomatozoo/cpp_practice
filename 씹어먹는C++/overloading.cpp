@@ -5,11 +5,17 @@ class MyString {
 	char* string_content;
 	int string_length;
 	int memory_capacity;
+
 public:
+	// 생성자 1 - 문자 하나로 생성
 	MyString(char c);
+	// 생성자 2 - 문자열로 생성
 	MyString(const char* str);
+	// 생성자 3 - 복사 생성자
 	MyString(const MyString& str);
+	// 소멸자
 	~MyString();
+
 
 	int length() const;
 	int capacity() const;
@@ -22,6 +28,8 @@ public:
 
 	int compare(MyString& str);
 	bool operator==(MyString& str);
+
+	char& operator[](const int index) { return string_content[index]; }
 };
 
 MyString::MyString(char c) {
@@ -37,13 +45,16 @@ MyString::MyString(const char* str) {
 	string_content = new char[string_length];
 	for (int i = 0; i != string_length; i++) string_content[i] = str[i];
 }
+
 MyString::MyString(const MyString& str) {
 	string_length = str.string_length;
 	string_content = new char[string_length];
 	for (int i = 0; i != string_length; i++)
 		string_content[i] = str.string_content[i];
 }
+
 MyString::~MyString() { delete[] string_content; }
+
 int MyString::length() const { return string_length; }
 void MyString::print() const {
 	for (int i = 0; i != string_length; i++) std::cout << string_content[i];
@@ -89,14 +100,12 @@ int MyString::compare(MyString& str) {
 bool MyString::operator==(MyString& str) {
 	return !compare(str);
 }
-int masdfgerain() {
+int wasmain() {
 	MyString str1("a word");
 	MyString str2("sentence");
 	MyString str3("sentence");
 
-	if (str1 == str2)
-		std::cout << "str1 = str2" << std::endl;
-	else
-		std::cout << "str1 != str2" << std::endl;
+	str1[3] = 'b';
+	str1.println();
 	return 0;
 }

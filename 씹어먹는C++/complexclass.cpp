@@ -142,7 +142,7 @@ Complex& Complex::operator=(const Complex& c) {
 	return *this;
 }
 
-int main() {
+int ma1234in() {
 	Complex a(1.0, 2.0);
 	a.println();
 	a = a + "-1.1+i3.923";
