@@ -38,7 +38,7 @@ public:
 void func(const Int& i) {
 	std::cout << "Int : " << i.get_x() << std::endl;
 }
-int main() {
+int wasdmain() {
 	Int x = 3;
 	int a = x + 4;
 	std::cout << a << std::endl;
