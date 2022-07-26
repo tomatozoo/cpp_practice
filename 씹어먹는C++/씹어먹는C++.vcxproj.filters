@@ -31,6 +31,18 @@
     <Filter Include="소스 파일\class6">
       <UniqueIdentifier>{bfac564f-d6a1-45b7-904d-f5150b638429}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\class7">
+      <UniqueIdentifier>{a9d10cd7-0e3c-436a-82ac-4a369ea07dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CPLAB">
+      <UniqueIdentifier>{9f52f29a-a79b-4bec-abd8-ab1bbed4e1a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CPLAB\LAB9">
+      <UniqueIdentifier>{770cc4c0-6528-474b-a6dc-22d736531e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CPLAB\LAB10">
+      <UniqueIdentifier>{409c5ee6-d3d8-46a7-9e57-3db29d1abae0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">
@@ -38,6 +50,12 @@
     </ClInclude>
     <ClInclude Include="header2.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>소스 파일\CPLAB\LAB10</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>소스 파일\CPLAB\LAB10</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -104,14 +122,26 @@
     <ClCompile Include="complexclass.cpp">
       <Filter>소스 파일\class6</Filter>
     </ClCompile>
-    <ClCompile Include="wrapper.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="employee.cpp">
+      <Filter>소스 파일\class7</Filter>
+    </ClCompile>
+    <ClCompile Include="inheritance.cpp">
+      <Filter>소스 파일\class7</Filter>
     </ClCompile>
     <ClCompile Include="ndiarray.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\class6</Filter>
     </ClCompile>
-    <ClCompile Include="employee.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="wrapper.cpp">
+      <Filter>소스 파일\class6</Filter>
+    </ClCompile>
+    <ClCompile Include="lab9.cpp">
+      <Filter>소스 파일\CPLAB\LAB9</Filter>
+    </ClCompile>
+    <ClCompile Include="LAB10.cpp">
+      <Filter>소스 파일\CPLAB\LAB10</Filter>
+    </ClCompile>
+    <ClCompile Include="LAB10-1.cpp">
+      <Filter>소스 파일\CPLAB\LAB10</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

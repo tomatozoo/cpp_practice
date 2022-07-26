@@ -152,6 +152,10 @@
     <ClCompile Include="firstfile.cpp" />
     <ClCompile Include="fourthcpp.cpp" />
     <ClCompile Include="fourth_two.cpp" />
+    <ClCompile Include="inheritance.cpp" />
+    <ClCompile Include="LAB10-1.cpp" />
+    <ClCompile Include="LAB10.cpp" />
+    <ClCompile Include="lab9.cpp" />
     <ClCompile Include="math.cpp" />
     <ClCompile Include="mutable.cpp" />
     <ClCompile Include="ndiarray.cpp" />
@@ -165,8 +169,10 @@
     <ClCompile Include="wrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Grid.h" />
     <ClInclude Include="header1.h" />
     <ClInclude Include="header2.h" />
+    <ClInclude Include="Point.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
