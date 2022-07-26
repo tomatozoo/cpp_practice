@@ -156,11 +156,13 @@
     <ClCompile Include="LAB10-1.cpp" />
     <ClCompile Include="LAB10.cpp" />
     <ClCompile Include="lab9.cpp" />
+    <ClCompile Include="manager.cpp" />
     <ClCompile Include="math.cpp" />
     <ClCompile Include="mutable.cpp" />
     <ClCompile Include="ndiarray.cpp" />
     <ClCompile Include="overloading.cpp" />
     <ClCompile Include="practice_constructor.cpp" />
+    <ClCompile Include="protected.cpp" />
     <ClCompile Include="referencereturn.cpp" />
     <ClCompile Include="secondcpp.cpp" />
     <ClCompile Include="string.cpp" />

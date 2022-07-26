@@ -143,5 +143,11 @@
     <ClCompile Include="LAB10-1.cpp">
       <Filter>소스 파일\CPLAB\LAB10</Filter>
     </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>소스 파일\class7</Filter>
+    </ClCompile>
+    <ClCompile Include="protected.cpp">
+      <Filter>소스 파일\class7</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

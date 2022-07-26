@@ -1,5 +1,5 @@
 #include <iostream>
-
+/*
 // 기반 클래스
 class Base {
 	std::string s;
@@ -25,11 +25,11 @@ public:
 		std::cout << "Derived의 s 값은 " << s << std::endl;
 	}
 };
-int main() {
+int msain() {
 	std::cout << "기반 클래스 생성" << std::endl;
 	Base p;
 	std::cout << "파생 클래스 생성" << std::endl;
 	Derived c;
 
 	return 0;
-}
+}*/
