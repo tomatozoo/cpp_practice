@@ -161,6 +161,7 @@
     <ClCompile Include="mutable.cpp" />
     <ClCompile Include="ndiarray.cpp" />
     <ClCompile Include="overloading.cpp" />
+    <ClCompile Include="polymorphism.cpp" />
     <ClCompile Include="practice_constructor.cpp" />
     <ClCompile Include="protected.cpp" />
     <ClCompile Include="referencereturn.cpp" />

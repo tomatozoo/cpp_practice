@@ -100,7 +100,7 @@ public:
 	}
 };
 
-int main() {
+int mai123412asdfn() {
 	EmployeeList emp_list(10);
 
 	emp_list.add_employee(new Employee("³ëÈ«Ã¶",34,"Æò»ç¿ø",1));
