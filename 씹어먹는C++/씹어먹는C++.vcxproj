@@ -147,6 +147,7 @@
     <ClCompile Include="copyconstructor.cpp" />
     <ClCompile Include="date.cpp" />
     <ClCompile Include="employee.cpp" />
+    <ClCompile Include="employeelist.cpp" />
     <ClCompile Include="explicit.cpp" />
     <ClCompile Include="fifth.cpp" />
     <ClCompile Include="firstfile.cpp" />

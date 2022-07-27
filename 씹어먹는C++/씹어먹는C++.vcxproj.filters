@@ -149,8 +149,11 @@
     <ClCompile Include="protected.cpp">
       <Filter>소스 파일\class7</Filter>
     </ClCompile>
+    <ClCompile Include="employeelist.cpp">
+      <Filter>소스 파일\class7</Filter>
+    </ClCompile>
     <ClCompile Include="polymorphism.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\class7</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
