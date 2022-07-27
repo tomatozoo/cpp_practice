@@ -156,6 +156,7 @@
     <ClCompile Include="inheritance.cpp" />
     <ClCompile Include="LAB10-1.cpp" />
     <ClCompile Include="LAB10.cpp" />
+    <ClCompile Include="LAB11.cpp" />
     <ClCompile Include="lab9.cpp" />
     <ClCompile Include="manager.cpp" />
     <ClCompile Include="math.cpp" />
@@ -170,6 +171,7 @@
     <ClCompile Include="string.cpp" />
     <ClCompile Include="stringclass.cpp" />
     <ClCompile Include="thirdcpp.cpp" />
+    <ClCompile Include="virtual.cpp" />
     <ClCompile Include="wrapper.cpp" />
   </ItemGroup>
   <ItemGroup>

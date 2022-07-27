@@ -43,6 +43,9 @@
     <Filter Include="소스 파일\CPLAB\LAB10">
       <UniqueIdentifier>{409c5ee6-d3d8-46a7-9e57-3db29d1abae0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\CPLAB\LAB11">
+      <UniqueIdentifier>{41cd92b6-2ba1-4889-acf5-8e1600fa1f8e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">
@@ -154,6 +157,12 @@
     </ClCompile>
     <ClCompile Include="polymorphism.cpp">
       <Filter>소스 파일\class7</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual.cpp">
+      <Filter>소스 파일\class7</Filter>
+    </ClCompile>
+    <ClCompile Include="LAB11.cpp">
+      <Filter>소스 파일\CPLAB\LAB11</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
