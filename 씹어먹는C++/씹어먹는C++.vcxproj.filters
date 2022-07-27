@@ -49,6 +49,12 @@
     <Filter Include="소스 파일\class8">
       <UniqueIdentifier>{986de9c2-b5f6-4e3b-90da-003587738d1e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\SNUPS">
+      <UniqueIdentifier>{70bff554-2bfd-4892-bb81-364c29b7ba3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\SNUPS\week1">
+      <UniqueIdentifier>{b103fbfd-a328-4d44-bef2-e454f8ed65d2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">
@@ -169,6 +175,27 @@
     </ClCompile>
     <ClCompile Include="multiple_inheritance.cpp">
       <Filter>소스 파일\class7</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ2753.cpp">
+      <Filter>소스 파일\SNUPS\week1</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ5032.cpp">
+      <Filter>소스 파일\SNUPS\week1</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ15596.cpp">
+      <Filter>소스 파일\SNUPS\week1</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ1436.cpp">
+      <Filter>소스 파일\SNUPS\week1</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ1546.cpp">
+      <Filter>소스 파일\SNUPS\week1</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ1110.cpp">
+      <Filter>소스 파일\SNUPS\week1</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ1018.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

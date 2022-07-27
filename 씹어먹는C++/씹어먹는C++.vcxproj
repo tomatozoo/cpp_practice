@@ -140,6 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2_5.cpp" />
+    <ClCompile Include="BOJ1018.cpp" />
+    <ClCompile Include="BOJ1110.cpp" />
+    <ClCompile Include="BOJ1436.cpp" />
+    <ClCompile Include="BOJ1546.cpp" />
+    <ClCompile Include="BOJ15596.cpp" />
+    <ClCompile Include="BOJ2753.cpp" />
+    <ClCompile Include="BOJ5032.cpp" />
     <ClCompile Include="complexclass.cpp" />
     <ClCompile Include="const.cpp" />
     <ClCompile Include="constfunction.cpp" />
