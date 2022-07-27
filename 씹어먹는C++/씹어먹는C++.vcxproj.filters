@@ -46,6 +46,9 @@
     <Filter Include="소스 파일\CPLAB\LAB11">
       <UniqueIdentifier>{41cd92b6-2ba1-4889-acf5-8e1600fa1f8e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\class8">
+      <UniqueIdentifier>{986de9c2-b5f6-4e3b-90da-003587738d1e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">
@@ -163,6 +166,9 @@
     </ClCompile>
     <ClCompile Include="LAB11.cpp">
       <Filter>소스 파일\CPLAB\LAB11</Filter>
+    </ClCompile>
+    <ClCompile Include="multiple_inheritance.cpp">
+      <Filter>소스 파일\class7</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

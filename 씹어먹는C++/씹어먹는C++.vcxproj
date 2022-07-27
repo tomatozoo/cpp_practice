@@ -160,6 +160,7 @@
     <ClCompile Include="lab9.cpp" />
     <ClCompile Include="manager.cpp" />
     <ClCompile Include="math.cpp" />
+    <ClCompile Include="multiple_inheritance.cpp" />
     <ClCompile Include="mutable.cpp" />
     <ClCompile Include="ndiarray.cpp" />
     <ClCompile Include="overloading.cpp" />
