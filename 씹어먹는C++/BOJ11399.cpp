@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <vector>
 
-int main() {
+int ma28in() {
 	// 정렬해서 합하기
 	int size;
 	std::cin >> size;

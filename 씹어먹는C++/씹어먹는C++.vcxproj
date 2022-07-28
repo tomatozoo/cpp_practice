@@ -143,6 +143,8 @@
     <ClCompile Include="BOJ1018.cpp" />
     <ClCompile Include="BOJ1110.cpp" />
     <ClCompile Include="BOJ11399.cpp" />
+    <ClCompile Include="BOJ11508.cpp" />
+    <ClCompile Include="BOJ1427.cpp" />
     <ClCompile Include="BOJ1436.cpp" />
     <ClCompile Include="BOJ1546.cpp" />
     <ClCompile Include="BOJ15596.cpp" />
