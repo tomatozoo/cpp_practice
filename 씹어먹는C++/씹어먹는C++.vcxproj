@@ -142,6 +142,7 @@
     <ClCompile Include="2_5.cpp" />
     <ClCompile Include="BOJ1018.cpp" />
     <ClCompile Include="BOJ1110.cpp" />
+    <ClCompile Include="BOJ11399.cpp" />
     <ClCompile Include="BOJ1436.cpp" />
     <ClCompile Include="BOJ1546.cpp" />
     <ClCompile Include="BOJ15596.cpp" />
@@ -177,6 +178,7 @@
     <ClCompile Include="protected.cpp" />
     <ClCompile Include="referencereturn.cpp" />
     <ClCompile Include="secondcpp.cpp" />
+    <ClCompile Include="stl.cpp" />
     <ClCompile Include="string.cpp" />
     <ClCompile Include="stringclass.cpp" />
     <ClCompile Include="thirdcpp.cpp" />
