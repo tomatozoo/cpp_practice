@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-
-int main() {
+/*
+int ma_in() {
 	int n, m;
 	std::cin >> n >> m;
 

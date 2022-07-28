@@ -152,6 +152,7 @@
     <ClCompile Include="constfunction.cpp" />
     <ClCompile Include="copy.cpp" />
     <ClCompile Include="copyconstructor.cpp" />
+    <ClCompile Include="cppstdlib.cpp" />
     <ClCompile Include="date.cpp" />
     <ClCompile Include="employee.cpp" />
     <ClCompile Include="employeelist.cpp" />
