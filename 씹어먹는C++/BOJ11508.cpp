@@ -5,7 +5,7 @@
 bool compae(int i, int j) {
 	return j < i;
 }
-int main() {
+int mai_n() {
 	int n;
 	std::cin >> n;
 	std::vector<int> lst(n);

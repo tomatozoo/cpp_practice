@@ -148,6 +148,7 @@
     <ClCompile Include="BOJ1436.cpp" />
     <ClCompile Include="BOJ1546.cpp" />
     <ClCompile Include="BOJ15596.cpp" />
+    <ClCompile Include="BOJ19941.cpp" />
     <ClCompile Include="BOJ2753.cpp" />
     <ClCompile Include="BOJ5032.cpp" />
     <ClCompile Include="complexclass.cpp" />
