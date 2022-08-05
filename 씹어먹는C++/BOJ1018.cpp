@@ -1,45 +1,57 @@
 #include <iostream>
 #include <string>
-/*
-int ma_in() {
+
+int main() {
+	// input
 	int n, m;
 	std::cin >> n >> m;
 
-	int** chess = new int* [n];
+	char** chess = new char* [n];
 	for (int i = 0; i < n; i++) {
-		chess[i] = new int[m];
+		chess[i] = new char[m];
 	}
+
+	char getline;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
 			std::cin >> chess[i][j];
 		}
-		std::cin.getline();
 	}
 
-	int min = 64, tmp = 0;
+
+	// 다시 칠해야 하는 최솟값 구하기
+	int min = 64, tmp = 0, tmp_same = 0, tmp_diff = 0, same = 0, diff = 0;
 	char std = '-';
 
-	for (int j=0;j<n-8;j++){
-		for (int k = 0; k < m - 8; k++) {
-			// 각 케이스에서 tmp을 구하고
-			for (int x = j; x < j + 8; x++) {
-				for (int y = k; y < k + 8; y++) {
-					if (((x % 2 == 0) && (y % 2 == 0)) || ((j % 2 == 1) && (k % 2 == 1))) {
-						if (chess[x][y] != std) {
-							tmp += 1;
+	for (int i = 0; i < n - 7; i++) {
+		for (int j = 0; j < m - 7; j++) {
+			// i, j에서 i+7, j+7까지 가는 체스판의 값을 각각 계산한다
+			tmp = 0; tmp_same = 0; tmp_diff = 0, same = 0, diff = 0;
+			std = chess[i][j];
+			for (int p = i; p < i + 8; p++) {
+				for (int q = j; q < j + 8; q++) {
+					// std와 같아야 하는 경우
+					if (((p-i) % 2==1 && (q-j)%2==1)||((p - i) %2==0&& (q - j) %2==0)) {
+						same += 1;
+						if (std != chess[p][q]) {
+							tmp_same += 1;
 						}
 					}
-					// 짝 홀
-					else if (((x % 2 == 0) && (y % 2 == 1)) || ((j % 2 == 1) && (k % 2 == 0))) {
-						if (chess[x][y] == std) {
-							tmp += 1;
+					// std와 달라야 하는 경우
+					if (((p - i) % 2 == 0 && (q - j) % 2 == 1) || ((p - i) % 2 == 1 && (q - j) % 2 == 0)) {
+						diff += 1;
+						if (std == chess[p][q]) {
+							tmp_diff += 1;
 						}
 					}
+					// std를 바꿀 수도 있다. 
 				}
 			}
-			// 최솟값 업데이트
-			if (min > tmp) {
-				min = tmp;
+			if ((tmp_same+tmp_diff) < min) {
+				min = (tmp_same + tmp_diff);
+			}
+			if ((same - tmp_same + diff - tmp_diff) < min) {
+				min = (same - tmp_same + diff - tmp_diff);
 			}
 		}
 	}
@@ -47,16 +59,3 @@ int ma_in() {
 	std::cout << min << std::endl;
 	return 0;
 }
-/*std = chess[0][0];
-			// 짝 짝
-			if (((x % 2 == 0) && (y % 2 == 0)) || ((j % 2 == 1) && (k % 2 == 1))) {
-				if (chess[i][j] != std) {
-					tmp += 1;
-				}
-			}
-			// 짝 홀
-			else if (((x % 2 == 0) && (y % 2 == 1))||((j % 2 == 1) && (k % 2 == 0))) {
-				if (chess[i][j] == std) {
-					tmp += 1;
-				}
-			}*/

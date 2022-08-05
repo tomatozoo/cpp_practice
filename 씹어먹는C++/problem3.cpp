@@ -2,7 +2,7 @@
 #include <string>
 #include <algorithm>
 
-int main() {
+int wasmain_1() {
 	
 	return 0;
 }
