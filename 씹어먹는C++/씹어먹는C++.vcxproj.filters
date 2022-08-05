@@ -61,6 +61,9 @@
     <Filter Include="소스 파일\CPP책">
       <UniqueIdentifier>{95d301ee-de6a-4fa0-bed9-492f8ebb8f4a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\StudioWaffle">
+      <UniqueIdentifier>{68543da3-5660-4333-84cb-332a93c98d2d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">
@@ -215,11 +218,17 @@
     <ClCompile Include="BOJ1427.cpp">
       <Filter>소스 파일\SNUPS\week2</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ11508.cpp">
-      <Filter>소스 파일\SNUPS\week2</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ19941.cpp">
       <Filter>소스 파일\SNUPS\week2</Filter>
+    </ClCompile>
+    <ClCompile Include="problem1.cpp">
+      <Filter>소스 파일\StudioWaffle</Filter>
+    </ClCompile>
+    <ClCompile Include="problem2.cpp">
+      <Filter>소스 파일\StudioWaffle</Filter>
+    </ClCompile>
+    <ClCompile Include="problem3.cpp">
+      <Filter>소스 파일\StudioWaffle</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

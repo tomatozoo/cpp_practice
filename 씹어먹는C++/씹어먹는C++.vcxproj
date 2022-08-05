@@ -143,7 +143,6 @@
     <ClCompile Include="BOJ1018.cpp" />
     <ClCompile Include="BOJ1110.cpp" />
     <ClCompile Include="BOJ11399.cpp" />
-    <ClCompile Include="BOJ11508.cpp" />
     <ClCompile Include="BOJ1427.cpp" />
     <ClCompile Include="BOJ1436.cpp" />
     <ClCompile Include="BOJ1546.cpp" />
@@ -178,6 +177,9 @@
     <ClCompile Include="overloading.cpp" />
     <ClCompile Include="polymorphism.cpp" />
     <ClCompile Include="practice_constructor.cpp" />
+    <ClCompile Include="problem1.cpp" />
+    <ClCompile Include="problem2.cpp" />
+    <ClCompile Include="problem3.cpp" />
     <ClCompile Include="protected.cpp" />
     <ClCompile Include="referencereturn.cpp" />
     <ClCompile Include="secondcpp.cpp" />
