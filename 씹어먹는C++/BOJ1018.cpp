@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int m1018in() {
 	// input
 	int n, m;
 	std::cin >> n >> m;
