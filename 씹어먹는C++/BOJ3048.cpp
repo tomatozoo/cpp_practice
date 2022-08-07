@@ -3,7 +3,7 @@
 #include <vector>
 #include <algorithm>
 
-int main() {
+int main3048() {
 	// 첫번째 그룹, 두번째 그룹의 사이즈
 	int n1, n2;
 	std::string ant1_tmp, ant2_tmp;
