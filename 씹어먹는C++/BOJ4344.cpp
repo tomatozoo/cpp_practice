@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+int main4344() {
 	int c;
 	std::cin >> c;
 	double* mean = new double[c];

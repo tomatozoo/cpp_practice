@@ -180,6 +180,7 @@
     <ClCompile Include="polymorphism.cpp" />
     <ClCompile Include="practice_constructor.cpp" />
     <ClCompile Include="problem1.cpp" />
+    <ClCompile Include="problem1_cpp.cpp" />
     <ClCompile Include="problem2.cpp" />
     <ClCompile Include="problem3.cpp" />
     <ClCompile Include="protected.cpp" />
