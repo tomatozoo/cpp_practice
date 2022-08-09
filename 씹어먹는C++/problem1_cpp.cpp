@@ -53,7 +53,7 @@ void FlipWaffle::end() {
 	std::cout << frontWa << std::endl;
 }
 
-int main() {
+int imnotmain() {
 	
 	return 0;
 } // hi
