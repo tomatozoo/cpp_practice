@@ -236,14 +236,17 @@
     <ClCompile Include="BOJ3048.cpp">
       <Filter>소스 파일\SNUPS\week1</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ4344.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="problem1_cpp.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ10773.cpp">
       <Filter>소스 파일\SNUPS\week4</Filter>
+    </ClCompile>
+    <ClCompile Include="problem1_cpp.cpp">
+      <Filter>소스 파일\StudioWaffle</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ4344.cpp">
+      <Filter>소스 파일\SNUPS\week1</Filter>
+    </ClCompile>
+    <ClCompile Include="problem10809.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
