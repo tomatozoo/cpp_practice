@@ -246,7 +246,10 @@
       <Filter>소스 파일\SNUPS\week1</Filter>
     </ClCompile>
     <ClCompile Include="problem10809.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\StudioWaffle</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ1966.cpp">
+      <Filter>소스 파일\SNUPS\week4</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

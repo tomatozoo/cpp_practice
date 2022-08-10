@@ -84,7 +84,7 @@ std::vector<std::string> split(std::string s, std::string divid) {
 	return v;
 }
 
-int main() {
+int m_ain() {
 	FlipWaffle waffle(1000, 1000);
 
 	std::string line;
@@ -144,10 +144,6 @@ int main() {
 
 /*
 vector의 크기를 벗어나는 데이터 항목을 참조하려고 할 때 발생
-
-
-
-
 
 해결 방법
 
