@@ -1,7 +1,7 @@
 #include <iostream>
 
 int mai_() {
-	// 첫째 줄에 N이 주어진다. 
+	// 첫째 줄에 N이 주어진다
 	int n;
 	std::cin >> n;
 
