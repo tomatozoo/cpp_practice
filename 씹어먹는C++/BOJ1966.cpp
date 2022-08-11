@@ -4,7 +4,7 @@
 #include <utility>
 #include <algorithm>
 
-int main() {
+int ma_9in() {
 	int testcase;
 	std::cin >> testcase;
 	std::vector<int> answer;

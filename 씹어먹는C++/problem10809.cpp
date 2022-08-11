@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <cstring>
 
 class FlipWaffle
 {
@@ -13,7 +14,10 @@ public:
 	std::vector<std::vector<int>> waffle;
 
 	FlipWaffle(int row, int col) {
-		std::vector<std::vector<int>> waffle(row, std::vector<int>(col, 0));
+		for (int i = 0; i < 1000; i++) {
+			std::vector<int> tmp(1000);
+			waffle.push_back(tmp);
+		}
 		frontWa = row * col;
 		backWa = 0;
 	}
@@ -84,7 +88,7 @@ std::vector<std::string> split(std::string s, std::string divid) {
 	return v;
 }
 
-int m_ain() {
+int m.ain() {
 	FlipWaffle waffle(1000, 1000);
 
 	std::string line;
@@ -93,6 +97,9 @@ int m_ain() {
 		std::string line;
 		std::cin.ignore();
 		std::getline(std::cin, line);
+
+		std::cout << "line start" << line << "line end" << std::endl;
+
 		std::vector<std::string> current_line;
 
 		// if empty 
@@ -101,13 +108,21 @@ int m_ain() {
 			break;
 		}
 
+		else if (line == "\n") {
+			waffle.end();
+			break;
+		}
+
+		else if (line == "\n\n") {
+			waffle.end();
+			break;
+		}
 		// else
 		else {
 			std::istringstream iss(line);
 			std::string ch;
 			while (iss >> ch) {
 				current_line.push_back(ch); // 0 : 명령어 1 : 시작 좌표 2 : through 3 : 종료 좌표
-				std::cout << ch << std::endl;
 			}
 
 			if (current_line.size() == 4) {
@@ -124,15 +139,12 @@ int m_ain() {
 				ssInt4 >> y2;
 
 				if (current_line[0] == "ack") {
-					std::cout << "back" << std::endl;
 					waffle.back(x1, y1, x2, y2);
 				}
 				else if (current_line[0] == "ront") {
-					std::cout << "front" << std::endl;
 					waffle.front(x1, y1, x2, y2);
 				}
 				else if (current_line[0] == "lip") {
-					std::cout << "flip" << std::endl;
 					waffle.flip(x1, y1, x2, y2);
 				}
 			}
