@@ -88,7 +88,7 @@ std::vector<std::string> split(std::string s, std::string divid) {
 	return v;
 }
 
-int m.ain() {
+int m_aain() {
 	FlipWaffle waffle(1000, 1000);
 
 	std::string line;

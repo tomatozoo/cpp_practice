@@ -1,49 +1,29 @@
 #include <iostream>
 
-int mai() {
+int mai_() {
+	// 첫째 줄에 N이 주어진다. 
 	int n;
 	std::cin >> n;
 
-	int** test_case = new int*[n];
-	int tmp_size = 0;
+	// 처음에 주어진 수의 가장 오른쪽 자리 수와
+	// 구한 합의 가장 오른쪽 자리 수를 이어 붙여 새로운 수를 만들 수 있다. 
 
-	for (int i = 0; i < n; i++) {
-		std::cin >> tmp_size;
-		test_case[i] = new int[tmp_size+1];
-		test_case[i][0] = tmp_size;
-		for (int j = 1; j < tmp_size; j++) {
-			std::cin >> test_case[i][j];
-		}
+	// 몇 번만에 원래 수로 돌아올 수 있을까? 
+
+	int tmp = n;
+	int next = -1, trial = 0;
+	while (next != n) {
+		// 각 자리 숫자를 더한다
+		int sumn = tmp % 10 + tmp / 10;
+
+		// 처음에 주어진 수의 가장 오른쪽 자리 수와
+		// 구한 합의 가장 오른쪽 자리 수를 이어 붙여 새로운 수를 만들 수 있다. 
+		next = 10 * (tmp % 10 )+ sumn % 10;
+		tmp = next;
+		trial++;
 	}
 
-	for (int i = 0; i < n; i++) {
-		tmp_size = test_case[i][0];
-		for (int j = 1; j < tmp_size; j++) {
-			std::cout << test_case[i][j] << " ";
-		}
-		std::cout << std::endl;
-	}
-	/*
-	double sum = 0, mean = 0;
-	int upper = 0;
-	for (int i = 0; i < n; i++) {
-		sum = 0;
-		mean = 0;
-		upper = 0;
-		tmp_size = test_case[i][0];
-		for (int j = 1; j < tmp_size; j++) {
-			std::cout << test_case[i][j];
-			sum += test_case[i][j];
-		}
-		mean = sum / tmp_size;
-		for (int j = 1; j < tmp_size; j++) {
-			if (test_case[i][j] > mean) {
-				upper += 1;
-			}
-		}
-		std::cout << upper / tmp_size * 100 << "%" << std::endl;
-	}
-	*/
+	std::cout << trial << std::endl;
 
 	return 0;
 }
