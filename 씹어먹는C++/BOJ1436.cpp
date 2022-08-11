@@ -1,19 +1,21 @@
 #include <iostream>
+#include <string>
 
-
-int world(int n) {
-	// 어떤 수에 6이 적어도 3개이상 연속으로 들어가는 수를 말한다.
-	// 3자리수 666
-	// 4자리수의 666 _666 666_ 
-	// 5자리수의 666
-	// 
-	return 0;
-}
-/*
 int main() {
 	int n;
 	std::cin >> n;
 
-	std::cout << world(n) << std::endl;
+	int tmp=666;
+	while (true) {
+		// tmp에 한번이라도 666이 등장한다면
+		if (std::to_string(tmp).find("666") != std::string::npos) {
+			n--;
+			if (n == 0) {
+				break;
+			}
+		}
+		tmp++;
+	}
+	std::cout << tmp << std::endl;
 	return 0;
-}*/
+}
