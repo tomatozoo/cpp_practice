@@ -16,7 +16,7 @@ void print(std::array<int, N> arr) {
 	}
 }
 
-int mai_n() {
+int main() {
 	// 배열 선언
 	std::array<int, 10> ary;
 	

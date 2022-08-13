@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int main1436() {
 	int n;
 	std::cin >> n;
 
