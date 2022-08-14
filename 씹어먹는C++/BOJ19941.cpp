@@ -16,7 +16,7 @@ void print(std::array<int, N> arr) {
 	}
 }
 
-int main() {
+int ma__in() {
 	// 배열 선언
 	std::array<int, 10> ary;
 	
@@ -30,7 +30,7 @@ int main() {
 	std::cout << ary.at(0);
 	std::cout << ary[0];
 
-	// 출력
+	// 출력 
 	std::array<int, 5> ary2 = { 1,2,3,4,5 };
 	print(ary2);
 
