@@ -3,8 +3,8 @@
 #include <vector>
 #include <stack>
 
-
-int main() {
+//
+int mai_9012() {
 	int size;
 	std::cin >> size;
 
