@@ -5,7 +5,7 @@
 #include <queue>
 #include <stdio.h>
 
-int main() {
+int mai() {
 	// 정답 저장소 
 	std::vector<int> answer;
 
