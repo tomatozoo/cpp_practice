@@ -254,8 +254,11 @@
     <ClCompile Include="BOJ1927.cpp">
       <Filter>소스 파일\SNUPS\week4</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ10828.cpp">
+      <Filter>소스 파일\SNUPS\week4</Filter>
+    </ClCompile>
     <ClCompile Include="BOJ9012.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\SNUPS\week4</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
