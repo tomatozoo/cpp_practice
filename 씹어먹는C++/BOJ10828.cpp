@@ -6,7 +6,7 @@
 #include <cstring>
 #include <stdio.h>
 
-int main() {
+int mai010828() {
 	// 명령의 개수
 	int n;
 	scanf("%d", &n);
