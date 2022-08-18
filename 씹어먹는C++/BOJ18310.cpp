@@ -1,5 +1,5 @@
 #include <iostream>
 
-int main() {
+int main18310() {
 	return 0;
 }
