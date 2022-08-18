@@ -5,7 +5,7 @@
 #include <sstream>
 
 
-int main() {
+int mai2257n() {
 	std::string str;
 	std::cin >> str;
 	std::stack<int> stk;
