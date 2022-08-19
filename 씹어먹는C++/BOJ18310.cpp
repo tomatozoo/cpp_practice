@@ -19,5 +19,5 @@ int main18310() {
 	else {
 		std::cout << v[(v.size() -1)/ 2] << std::endl;
 	}
-	return 0;
+	return 0; 
 }
