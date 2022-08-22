@@ -12,7 +12,7 @@ int fib(int n) {
 		return fibo[n - 1];
 	}
 }
-int main() {
+int maindp() {
 
 	std::cout << fib(2) << std::endl;
 	return 0;
