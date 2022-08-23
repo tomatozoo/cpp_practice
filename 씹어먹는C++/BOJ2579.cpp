@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 
-int main() {
+int main2579() {
 	int n;
 	std::cin >> n;
 	std::vector<int> v;
@@ -23,4 +23,4 @@ int main() {
 	}
 	std::cout << dp[n-1] << std::endl;
 	return 0;
-} 
+}
