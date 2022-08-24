@@ -17,7 +17,7 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		c[i] = 1;
 
-		for (int j = 0; j < i; j++) {
+		for (int j = 0; j < i; j++) { 
 			if (a[j] < a[i] && c[i] < c[j] + 1) {
 				c[i] = c[j] + 1;
 			}
