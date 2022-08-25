@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 
-int main() {
+int main11053() {
 	int n;
 	std::cin >> n;
 	std::vector<int> a;
