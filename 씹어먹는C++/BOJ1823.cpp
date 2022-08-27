@@ -6,7 +6,7 @@ int dp(int l, int r, int k) {
 	if (l > r) {
 		return 0;
 	}
-	int& ret = d[l][r];
+	int& ret = d[l][r]; 
 	if (ret != -1) {
 		return ret;
 	}
