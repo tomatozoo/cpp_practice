@@ -13,7 +13,7 @@ int dp(int l, int r, int k) {
 	return ret = max(dp(l, r - 1, k + 1)+a[r]*k, dp(l+1, r, k+1)+a[l]*k);
 }
 
-int main() {
+int mai1823() {
 	memset(d, -1, sizeof(d));
 
 	cin >> n;
