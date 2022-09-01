@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+/*nclude <bits / stdc++.h>
 using namespace std;
 int n, a[2001], d[2001][2001];
 
@@ -24,3 +24,4 @@ int mai1823() {
 	cout << dp(0,n-1,1);
 	return 0;
 }
+*/

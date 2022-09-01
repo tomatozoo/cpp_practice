@@ -293,5 +293,8 @@
     <ClCompile Include="BOJ1823.cpp">
       <Filter>소스 파일\SNUPS\week3</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ2358.cpp">
+      <Filter>소스 파일\SNUPS\week4</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
