@@ -2,7 +2,7 @@
 #include <map>
 #include <utility>
 
-int main() {
+int main2358() {
 	// n °³ÀÇ ÁÂÇ¥
 	int n;
 	std::cin >> n;
@@ -12,7 +12,7 @@ int main() {
 
 
 	for (int i = 0; i < n; i++) {
-		int x, y;
+		int x, y; 
 		std::cin >> x >> y;
 		x_value[x] += 1;
 		y_value[y] += 1;
