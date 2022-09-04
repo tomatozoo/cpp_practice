@@ -305,5 +305,8 @@
     <ClCompile Include="BOJ9663.cpp">
       <Filter>소스 파일\SNUPS\week9</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ15649.cpp">
+      <Filter>소스 파일\SNUPS\week9</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

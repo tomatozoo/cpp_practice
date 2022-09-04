@@ -152,6 +152,7 @@
     <ClCompile Include="BOJ1436.cpp" />
     <ClCompile Include="BOJ1546.cpp" />
     <ClCompile Include="BOJ15596.cpp" />
+    <ClCompile Include="BOJ15649.cpp" />
     <ClCompile Include="BOJ1620.cpp" />
     <ClCompile Include="BOJ1823.cpp" />
     <ClCompile Include="BOJ18310.cpp" />
