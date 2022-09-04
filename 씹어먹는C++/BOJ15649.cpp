@@ -1,48 +1,30 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-#include <algorithm>
-#include <vector>
-#include <string>
-#include <stdio.h>
+
+int n, m;
+int arr[9] = { 0, };
+bool visit[9] = { 0, };
+
+void back(int depth) {
+	if (depth == m) {
+		for (int i = 0; i < m; i++) {
+			std::cout << arr[i] << ' ';
+		}
+		std::cout << "\n";
+		return;
+	}
+	for (int i = 1; i <= n; i++) {
+		if (!visit[i]) {
+			visit[i] = true;
+			arr[depth] = i;
+			back(depth + 1);
+			visit[i] = false;
+		}
+	}
+}
 
 int main15649() {
-	int n, m;
-	scanf("%d %d", &n, &m);
+	std::cin >> n >> m;
 
-	std::vector<int> v;
-
-	for (int i = 1; i <= n; i++) {
-		v.push_back(i);
-	}
-
-	int index = 0;
-
-	do {
-		if (n - m == 0) {
-			for (int i = 0; i < m ; i++) {
-				printf("%d ", v[i]);
-			}
-			printf("\n");
-		}
-		else {
-			if (index == 0) {
-				for (int i = 0; i < m; i++) {
-					printf("%d ", v[i]);
-				}
-				printf("\n");
-			}
-			else {
-				if ((n - m) <= index && index % (n - m) == 0) {
-					for (int i = 0; i < m; i++) {
-						printf("%d ", v[i]);
-					}
-					printf("\n");
-				}
-			}
-		}
-
-		index++;
-	} while (next_permutation(v.begin(), v.end()));
-
+	back(0);
 	return 0;
 }
