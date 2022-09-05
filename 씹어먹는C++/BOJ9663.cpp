@@ -1,5 +1,5 @@
 #include <iostream>
-
+/*
 int N;
 int* block = new int[16];
 int cnt = 0;
@@ -33,4 +33,4 @@ int main9663() {
 
 	std::cout << cnt << std::endl;
 	return 0;
-}
+}*/
