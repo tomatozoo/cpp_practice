@@ -13,7 +13,7 @@ void dfs(int x, int vertex, int edge, int** graph, int* visited) {
 	}
 }
 
-int main() {
+int main2606() {
 	int vertex, edge;
 
 	std::cin >> vertex;
