@@ -73,6 +73,9 @@
     <Filter Include="소스 파일\SNUPS\week9">
       <UniqueIdentifier>{c76c8aa6-4106-4d47-a30a-f77c1f077332}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\SNUPS\week5">
+      <UniqueIdentifier>{1844daac-8c59-4369-80c0-0b5bb81a4ac8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header1.h">
@@ -312,7 +315,10 @@
       <Filter>소스 파일\SNUPS\week2</Filter>
     </ClCompile>
     <ClCompile Include="BOJ2606.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\SNUPS\week5</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ1260.cpp">
+      <Filter>소스 파일\SNUPS\week5</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
