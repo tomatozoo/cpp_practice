@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> 
 #include <string>
 
 int m1018in() {
@@ -19,32 +19,32 @@ int m1018in() {
 	}
 
 
-	// ´Ù½Ã Ä¥ÇØ¾ß ÇÏ´Â ÃÖ¼Ú°ª ±¸ÇÏ±â
+	// ë‹¤ì‹œ ì¹ í•´ì•¼ í•˜ëŠ” ìµœì†Ÿê°’ êµ¬í•˜ê¸°
 	int min = 64, tmp = 0, tmp_same = 0, tmp_diff = 0, same = 0, diff = 0;
 	char std = '-';
 
 	for (int i = 0; i < n - 7; i++) {
 		for (int j = 0; j < m - 7; j++) {
-			// i, j¿¡¼­ i+7, j+7±îÁö °¡´Â Ã¼½ºÆÇÀÇ °ªÀ» °¢°¢ °è»êÇÑ´Ù
+			// i, jì—ì„œ i+7, j+7ê¹Œì§€ ê°€ëŠ” ì²´ìŠ¤íŒì˜ ê°’ì„ ê°ê° ê³„ì‚°í•œë‹¤
 			tmp = 0; tmp_same = 0; tmp_diff = 0, same = 0, diff = 0;
 			std = chess[i][j];
 			for (int p = i; p < i + 8; p++) {
 				for (int q = j; q < j + 8; q++) {
-					// std¿Í °°¾Æ¾ß ÇÏ´Â °æ¿ì
+					// stdì™€ ê°™ì•„ì•¼ í•˜ëŠ” ê²½ìš°
 					if (((p-i) % 2==1 && (q-j)%2==1)||((p - i) %2==0&& (q - j) %2==0)) {
 						same += 1;
 						if (std != chess[p][q]) {
 							tmp_same += 1;
 						}
 					}
-					// std¿Í ´Þ¶ó¾ß ÇÏ´Â °æ¿ì
+					// stdì™€ ë‹¬ë¼ì•¼ í•˜ëŠ” ê²½ìš°
 					if (((p - i) % 2 == 0 && (q - j) % 2 == 1) || ((p - i) % 2 == 1 && (q - j) % 2 == 0)) {
 						diff += 1;
 						if (std == chess[p][q]) {
 							tmp_diff += 1;
 						}
 					}
-					// std¸¦ ¹Ù²Ü ¼öµµ ÀÖ´Ù. 
+					// stdë¥¼ ë°”ê¿€ ìˆ˜ë„ ìžˆë‹¤. 
 				}
 			}
 			if ((tmp_same+tmp_diff) < min) {
