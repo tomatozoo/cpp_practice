@@ -4,6 +4,7 @@
 #include <cmath> 
 #include <string>
 
+
 int main10610() {
 	std::string n;
 	std::cin >> n;
