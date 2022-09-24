@@ -1,9 +1,10 @@
 #include <iostream>
 #include <algorithm>
+
 #include <vector>
 
 int ma28in() {
-	// Á¤·ÄÇØ¼­ ÇÕÇÏ±â
+	// ÃÂ¤Â·Ã„Ã‡Ã˜Â¼Â­ Ã‡Ã•Ã‡ÃÂ±Ã¢
 	int size;
 	std::cin >> size;
 
