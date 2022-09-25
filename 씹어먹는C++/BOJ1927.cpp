@@ -5,17 +5,18 @@
 #include <queue>
 #include <stdio.h>
 
+
 int mai() {
-	// Á¤´ä ÀúÀå¼Ò 
+	// ì •ë‹µ ì €ì¥ì†Œ 
 	std::vector<int> answer;
 
-	// ¿¬»êÀÇ °³¼ö n
+	// ì—°ì‚°ì˜ ê°œìˆ˜ n
 	int n;
 	scanf("%d", &n);
 
 	std::priority_queue<int> pqueue;
 
-	// n°³ÀÇ ÁÙ¿¡¼­ ¿¬»êÀ» ¼öÇàÇÏ±â
+	// nê°œì˜ ì¤„ì—ì„œ ì—°ì‚°ì„ ìˆ˜í–‰í•˜ê¸°
 	int x;
 	for (int i = 0; i < n; i++) {
 		scanf("%d", &x);
@@ -27,7 +28,7 @@ int mai() {
 				answer.push_back(0);
 			}
 			else {
-				// ¹è¿­¿¡¼­ °¡Àå ÀÛÀº °ªÀ» Ãâ·ÂÇÏ°í, ±× °ªÀ» ¹è¿­¿¡¼­ Á¦°ÅÇÏ±â
+				// ë°°ì—´ì—ì„œ ê°€ì¥ ì‘ì€ ê°’ì„ ì¶œë ¥í•˜ê³ , ê·¸ ê°’ì„ ë°°ì—´ì—ì„œ ì œê±°í•˜ê¸°
 				answer.push_back(-pqueue.top());
 				pqueue.pop();
 			}
