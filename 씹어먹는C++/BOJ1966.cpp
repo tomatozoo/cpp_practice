@@ -4,6 +4,7 @@
 #include <utility>
 #include <algorithm>
 
+
 int ma_9in() {
 	int testcase;
 	std::cin >> testcase;
@@ -11,8 +12,8 @@ int ma_9in() {
 
 
 	for (int i = 0; i < testcase; i++) {
-		// ¹®¼­ÀÇ °³¼ö n
-		// Ãâ·Â ¼ø¼­(¿ì¼±¼øÀ§ Å¥¿¡¼­ ¸î¹øÂ° ÀÚ¸®ÀÎÁö) ±Ã±İÇÑ m
+		// ë¬¸ì„œì˜ ê°œìˆ˜ n
+		// ì¶œë ¥ ìˆœì„œ(ìš°ì„ ìˆœìœ„ íì—ì„œ ëª‡ë²ˆì§¸ ìë¦¬ì¸ì§€) ê¶ê¸ˆí•œ m
 		int n, m;
 		std::cin >> n >> m;
 
@@ -33,7 +34,7 @@ int ma_9in() {
 
 		std::sort(v.begin(), v.end());
 
-		// mÀÇ Ãâ·Â ¼ø¼­´Â mÀÌ ¿ì¼±¼øÀ§ Å¥ ¸î ¹øÂ° ¿ø¼ÒÀÎÁö¿¡ µû¶ó ¾Ë ¼ö ÀÖ´Ù. 
+		// mì˜ ì¶œë ¥ ìˆœì„œëŠ” mì´ ìš°ì„ ìˆœìœ„ í ëª‡ ë²ˆì§¸ ì›ì†Œì¸ì§€ì— ë”°ë¼ ì•Œ ìˆ˜ ìˆë‹¤. 
 		int tmp_ans = 0;
 		while (true) {
 			if (v.back() == pqueue.front().first) {
