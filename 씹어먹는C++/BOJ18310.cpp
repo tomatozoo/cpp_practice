@@ -2,7 +2,6 @@
 #include <vector>
 #include <algorithm>
 
-
 int main18310() {
 	int n;
 	std::cin >> n;
