@@ -1,14 +1,15 @@
 #include <iostream>
 #include <array>
 
-// int 5 »çÀÌÁî array ¸¸ ¹ŞÀ» ¼ö ÀÖÀ½
+
+// int 5 ì‚¬ì´ì¦ˆ array ë§Œ ë°›ì„ ìˆ˜ ìˆìŒ
 void print(std::array<int, 5> arr) {
 	for (auto ele : arr) {
 		std::cout << ele << ", ";
 	}
 }
 
-// ¾Æ¹« »çÀÌÁî¸¸ ¹Ş°Ô template »ç¿ë
+// ì•„ë¬´ ì‚¬ì´ì¦ˆë§Œ ë°›ê²Œ template ì‚¬ìš©
 template <size_t N>
 void print(std::array<int, N> arr) {
 	for (auto ele : arr) {
@@ -17,31 +18,31 @@ void print(std::array<int, N> arr) {
 }
 
 int ma__in() {
-	// ¹è¿­ ¼±¾ğ
+	// ë°°ì—´ ì„ ì–¸
 	std::array<int, 10> ary;
 	
-	// °ª ÇÒ´ç
+	// ê°’ í• ë‹¹
 	ary[0] = 1;
 
-	// Ãâ·Â
+	// ì¶œë ¥
 	std::cout << ary[0];
 
-	// ÀÎµ¦½Ì
+	// ì¸ë±ì‹±
 	std::cout << ary.at(0);
 	std::cout << ary[0];
 
-	// Ãâ·Â 
+	// ì¶œë ¥ 
 	std::array<int, 5> ary2 = { 1,2,3,4,5 };
 	print(ary2);
 
-	// ¿ø¼Ò Á¢±Ù
+	// ì›ì†Œ ì ‘ê·¼
 	ary2.begin();
 	ary2.end();
-	ary2.front(); // Ã¹ ¿ø¼Ò
-	ary2.back(); // ¸¶Áö¸· ¿ø¼Ò
-	ary2.data(); // Æ÷ÀÎÅÍ°İ
+	ary2.front(); // ì²« ì›ì†Œ
+	ary2.back(); // ë§ˆì§€ë§‰ ì›ì†Œ
+	ary2.data(); // í¬ì¸í„°ê²©
 
-	// ¹İº¹¹® ½ºÅ¸ÀÏ
+	// ë°˜ë³µë¬¸ ìŠ¤íƒ€ì¼
 	for (auto it = ary2.begin(); it != ary2.end(); it++) {
 		auto element = (*it);
 		std::cout << element << ' ';
