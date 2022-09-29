@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS 
 #include <iostream>
 #include <stack>
 #include <string>
@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 int mai010828() {
-	// ¸í·ÉÀÇ °³¼ö
+	// Â¸Ã­Â·Ã‰Ã€Ã‡ Â°Â³Â¼Ã¶
 	int n;
 	scanf("%d", &n);
 	std::vector<int> answer;
