@@ -2,6 +2,7 @@
 #include <string>
  
 
+
 int m1018in() {
 	// input
 	int n, m;
