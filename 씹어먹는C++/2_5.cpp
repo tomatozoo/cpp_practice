@@ -6,11 +6,6 @@ void print(int x) {
 	std::cout << "int: " << x << std::endl;
 	return;
 }
-/*
-void print(char x) {
-	std::cout << "char: " << x << std::endl;
-	return;
-}*/
 void print(double x) {
 	std::cout << "double: " << x << std::endl;
 	return;
