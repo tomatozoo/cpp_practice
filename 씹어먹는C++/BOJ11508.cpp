@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <vector>
 
+
 bool compae(int i, int j) {
 	return j < i;
 }
