@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <numeric>
- 
 int notmainanymore() {
 	int k;
 	std::cin >> k;
