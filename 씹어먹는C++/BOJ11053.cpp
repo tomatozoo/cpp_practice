@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include <algorithm> 
 
 int main11053() {
 	int n;
@@ -13,7 +13,7 @@ int main11053() {
 		a.push_back(tmp);
 	}
 
-	// °¡Àå ±ä Áõ°¡ÇÏ´Â ºÎºĞ ¼ö¿­
+	// ê°€ì¥ ê¸´ ì¦ê°€í•˜ëŠ” ë¶€ë¶„ ìˆ˜ì—´
 	for (int i = 0; i < n; i++) {
 		c[i] = 1;
 
