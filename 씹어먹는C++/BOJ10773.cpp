@@ -4,7 +4,7 @@
 int notmainanymore() {
 	int k;
 	std::cin >> k;
-	int sum = 0;
+	int sum = 0; 
 
 	std::vector<int> vec(k);
 
